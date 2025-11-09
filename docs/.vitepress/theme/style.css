@@ -1,0 +1,64 @@
+/* .vitepress/theme/style.css */
+
+/* 1. 在文件最顶部，从 Google Fonts 引入你选择的字体 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+/* 2. 定义 CSS 变量，方便全局使用 */
+:root {
+  --font-family-base: 'Lato', 'Noto Sans SC', sans-serif; /* 定义基础正文字体 */
+}
+
+/* 3. 应用到全局 */
+body {
+  font-family: var(--font-family-base);
+}
+
+/* 4. （可选）为标题设置不同的字体 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-base); /* 你也可以为标题指定不同的字体 */
+}
+
+/* .vitepress/theme/style.css */
+
+/*
+  VitePress 默认主题分为亮色和暗色两种模式
+  你可以分别对它们进行定制
+*/
+
+/* :root 选择器作用于亮色模式 */
+:root {
+  /* 品牌色 - 决定了链接、标题左侧竖线等的颜色 */
+  --vp-c-brand-1: #2B6CB0; /* 换成一个沉稳的蓝色 */
+  --vp-c-brand-2: #3182CE;
+
+  /* 文本颜色 */
+  --vp-c-text-1: #2D3748; /* 主要文字颜色，深灰色 */
+  --vp-c-text-2: #4A5568; /* 次要文字颜色 */
+
+  /* 背景颜色 */
+  --vp-c-bg: #F7FAFC; /* 一个非常浅的灰色背景，比纯白更柔和 */
+}
+
+/* .dark 选择器作用于暗色模式 */
+.dark {
+  --vp-c-brand-1: #63B3ED;
+  --vp-c-brand-2: #4299E1;
+
+  --vp-c-text-1: #E2E8F0;
+  --vp-c-text-2: #A0AEC0;
+
+  --vp-c-bg: #1A202C;
+}
+
+/* .vitepress/theme/style.css */
+
+/* 加宽正文区域，让宽屏显示器更舒服 */
+.VPDoc .container {
+  max-width: 820px !important; /* VitePress 默认是 688px */
+}
+
+/* 增加正文行高，提升阅读体验 */
+.VPDoc .vp-doc p, .VPDoc .vp-doc li {
+  line-height: 1.8; /* 默认是 1.7 */
+  font-size: 17px;  /* 默认是 16px */
+}

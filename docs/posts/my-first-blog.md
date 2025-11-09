@@ -5,3 +5,5 @@ outline: deep
 ---
 
 Hello, World!
+
+<ArticleList />
