@@ -1,25 +1,19 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: 首页
+titleTemplate: 我的个人博客
 
 hero:
-  name: "Real's blog"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "吴玉峰的博客"
+  text: "软件开发菜鸟的成长日记"
+  tagline: "在这里记录代码，沉淀思考，分享探索与发现。"
+  # image:
+  #   src: /avatar.png
+  #   alt: My Avatar
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 开始阅读
+      link: /posts/my-first-blog 
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
-
+      text: 关于我
+      link: /about
