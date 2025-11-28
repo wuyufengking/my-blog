@@ -1,7 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import Home from './components/Home.vue'
-import ArticleList from './components/ArticleList.vue'
 
 // 引入样式文件 - 必须包含Tailwind CSS
 import './style.css'
@@ -21,7 +20,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // 全局注册组件
     app.component('Home', Home)
-    app.component('ArticleList', ArticleList)
 
     // 可以在这里添加全局属性或插件
     if (typeof window !== 'undefined') {
