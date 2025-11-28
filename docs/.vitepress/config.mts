@@ -4,12 +4,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Real's blog",
   description: "A VitePress Site",
+  appearance: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: '博客', link: '/posts/my-first-blog' }
+      { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
@@ -47,12 +47,6 @@ export default defineConfig({
           }
         }
       }
-    },
-
-    // 页面导航 (Outline) 配置
-    outline: {
-      level: [2, 3], // 显示 h2 和 h3 标题层级
-      label: '页面导航' // 汉化标题
     },
 
     socialLinks: [
