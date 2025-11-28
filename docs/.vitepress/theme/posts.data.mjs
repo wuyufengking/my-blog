@@ -44,7 +44,7 @@ export default createContentLoader('posts/*.md', {
           author: frontmatter.author || '',
 
           // 阅读时间估算（基于字符数粗略计算，假设每分钟阅读1000字符）
-          readingTime: Math.ceil((src || '').length / 1000),
+          readingTime: Math.ceil((src || '').length / 500),
 
           // 原始frontmatter，用于扩展
           rawFrontmatter: frontmatter

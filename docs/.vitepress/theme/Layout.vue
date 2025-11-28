@@ -21,7 +21,10 @@
 
       <!-- 重要：在文章底部预留评论插槽 (doc-after) -->
       <template #doc-after>
-        <!-- 评论组件将在这里渲染 -->
+        <!-- 评论组件 - 只在文章页面显示，不在首页显示 -->
+        <Comments v-if="isPostPage && frontmatter.comments !== false" />
+
+        <!-- 额外的doc-after插槽内容 -->
         <slot name="doc-after" />
 
         <!-- 如果是文章页面且不在首页，可以在这里添加额外的内容 -->
@@ -89,6 +92,7 @@ import { computed, ref } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Home from './components/Home.vue'
+import Comments from './components/Comments.vue'
 
 // 获取VitePress数据和路由信息
 const { frontmatter, site } = useData()
