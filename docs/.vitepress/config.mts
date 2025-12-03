@@ -9,9 +9,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '博客', link: '/markdown-examples' },
-      { text: '关于', link: '/about' },
-      { text: '当下', link: '/now' }
+      { text: '碎碎念', link: '/memos' },
+      { text: '当下', link: '/now' },
+      { text: '关于我', link: '/about' }
     ],
 
     // 启用本地搜索 - 高级配置版本
