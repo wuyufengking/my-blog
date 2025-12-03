@@ -108,3 +108,6 @@ docs/.vitepress/dist/
 
 # Local Netlify folder
 .netlify
+
+# Personal thinking notes
+thinking.md

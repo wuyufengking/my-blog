@@ -70,15 +70,15 @@
       <template #layout-bottom>
         <footer class="custom-footer">
           <div class="footer-content">
-            <p>&copy; {{ currentYear }} My Blog. Powered by VitePress & Fuwari Style.</p>
-            <div class="footer-links">
+            <p>&copy; {{ currentYear }} My Blog. Powered by VitePress.</p>
+            <!-- <div class="footer-links">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
               <a href="/feed.xml" target="_blank">
                 RSS
               </a>
-            </div>
+            </div> -->
           </div>
         </footer>
         <slot name="layout-bottom" />
