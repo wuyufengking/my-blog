@@ -5,10 +5,12 @@ title: 当下
 
 # 当下
 
-<small>Last updated: 2025/12/02</small>
+<small>Last updated: 2025/12/03</small>
 
 ## 正在做
-**完善个人网站**：正在把这里装修成我理想的互联网家园。
+完善个人网站  
+探索软件开发感兴趣的领域 & 学习商业知识
+
 
 ## 正在看
 《风骚律师》 (Better Call Saul)
