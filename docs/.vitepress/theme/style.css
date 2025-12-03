@@ -1,266 +1,169 @@
-/* .vitepress/theme/style.css */
 /* 1. 字体引入 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Lato:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=JetBrains+Mono:wght@400&display=swap');
 
-/* 2. Tailwind CSS 核心指令 - 必须包含 */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* 3. Tailwind CSS 自定义基础样式 */
 @layer base {
-  /* 全局字体设置 */
   html {
-    font-family: 'Inter', 'Lato', 'Noto Sans SC', system-ui, sans-serif;
+    background-color: #f9f7f3 !important;
     scroll-behavior: smooth;
+  }
+  
+  html.dark {
+    background-color: #1c1a18 !important;
   }
 
   body {
-    @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
-  }
-
-  /* 代码字体 */
-  code, pre {
-    font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
-  }
-
-  /* 平滑滚动 */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* 自定义滚动条 */
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-gray-100 dark:bg-gray-800;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400 dark:bg-gray-500;
-  }
-}
-
-/* 4. Tailwind CSS 自定义组件样式 */
-@layer components {
-  /* 卡片基础样式 */
-  .card {
-    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
-  }
-
-  /* 按钮基础样式 */
-  .btn-primary {
-    @apply px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200 font-medium;
-  }
-
-  .btn-secondary {
-    @apply px-6 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg transition-colors duration-200 font-medium;
-  }
-
-  /* 渐变背景 */
-  .gradient-bg {
-    @apply bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800;
-  }
-}
-
-/* 5. VitePress 主题变量覆盖 - 关键！使用蓝色系品牌色 */
-
-/* :root 选择器作用于亮色模式 */
-:root {
-  /* 品牌色 - 改为蓝色系，匹配 Tailwind blue-500 */
-  --vp-c-brand-1: #3b82f6; /* Tailwind blue-500 */
-  --vp-c-brand-2: #2563eb; /* Tailwind blue-600 */
-  --vp-c-brand-3: #1d4ed8; /* Tailwind blue-700 */
-  --vp-c-brand-soft: #eff6ff; /* Tailwind blue-50 */
-
-  /* 文本颜色 */
-  --vp-c-text-1: #1f2937; /* 灰色900，更深的文字 */
-  --vp-c-text-2: #4b5563; /* 灰色600 */
-  --vp-c-text-3: #9ca3af; /* 灰色400 */
-  --vp-c-text-4: #e5e7eb; /* 灰色200 */
-
-  /* 背景颜色 */
-  --vp-c-bg: #ffffff; /* 纯白背景 */
-  --vp-c-bg-alt: #f9fafb; /* 灰色50 */
-  --vp-c-bg-soft: #f3f4f6; /* 灰色100 */
-  --vp-c-bg-mute: #f9fafb; /* 灰色50 */
-
-  /* 边框和分割线 */
-  --vp-c-border: #e5e7eb; /* 灰色200 */
-  --vp-c-divider: #f3f4f6; /* 灰色100 */
-  --vp-c-gutter: #f3f4f6; /* 灰色100 */
-
-  /* 强调色 */
-  --vp-c-default-1: #1f2937; /* 灰色900 */
-  --vp-c-default-2: #374151; /* 灰色700 */
-  --vp-c-default-3: #6b7280; /* 灰色500 */
-  --vp-c-default-soft: #f9fafb; /* 灰色50 */
-
-  /* 高亮色 */
-  --vp-c-bg-elv: #ffffff;
-  --vp-c-bg-elv-mute: #f3f4f6;
-}
-
-/* .dark 选择器作用于暗色模式 */
-.dark {
-  /* 品牌色 - 暗色模式下的蓝色系 */
-  --vp-c-brand-1: #60a5fa; /* Tailwind blue-400 */
-  --vp-c-brand-2: #3b82f6; /* Tailwind blue-500 */
-  --vp-c-brand-3: #2563eb; /* Tailwind blue-600 */
-  --vp-c-brand-soft: #1e3a8a; /* Tailwind blue-900 */
-
-  /* 文本颜色 */
-  --vp-c-text-1: #f9fafb; /* 灰色50 */
-  --vp-c-text-2: #d1d5db; /* 灰色300 */
-  --vp-c-text-3: #9ca3af; /* 灰色400 */
-  --vp-c-text-4: #4b5563; /* 灰色600 */
-
-  /* 背景颜色 */
-  --vp-c-bg: #111827; /* 灰色900 */
-  --vp-c-bg-alt: #1f2937; /* 灰色800 */
-  --vp-c-bg-soft: #374151; /* 灰色700 */
-  --vp-c-bg-mute: #1f2937; /* 灰色800 */
-
-  /* 边框和分割线 */
-  --vp-c-border: #374151; /* 灰色700 */
-  --vp-c-divider: #4b5563; /* 灰色600 */
-  --vp-c-gutter: #374151; /* 灰色700 */
-
-  /* 强调色 */
-  --vp-c-default-1: #f9fafb; /* 灰色50 */
-  --vp-c-default-2: #e5e7eb; /* 灰色200 */
-  --vp-c-default-3: #9ca3af; /* 灰色400 */
-  --vp-c-default-soft: #374151; /* 灰色700 */
-
-  /* 高亮色 */
-  --vp-c-bg-elv: #1f2937;
-  --vp-c-bg-elv-mute: #374151;
-}
-
-/* 6. VitePress 组件样式覆盖和优化 */
-
-/* 导航栏优化 */
-.VPNav {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-/* 侧边栏优化 */
-.VPSidebar {
-  @apply border-r border-gray-200 dark:border-gray-700;
-}
-
-/* 内容区域优化 */
-.VPDoc .container {
-  max-width: 820px !important; /* 保持之前的加宽设置 */
-}
-
-.VPDoc .vp-doc {
-  @apply text-gray-900 dark:text-gray-100;
-}
-
-/* 正文排版优化 */
-.VPDoc .vp-doc p,
-.VPDoc .vp-doc li {
-  line-height: 1.8;
-  font-size: 17px;
-  @apply text-gray-700 dark:text-gray-300;
-}
-
-/* 标题样式 */
-.VPDoc .vp-doc h1,
-.VPDoc .vp-doc h2,
-.VPDoc .vp-doc h3,
-.VPDoc .vp-doc h4,
-.VPDoc .vp-doc h5,
-.VPDoc .vp-doc h6 {
-  @apply text-gray-900 dark:text-gray-100 font-semibold;
-  line-height: 1.4;
-}
-
-/* 链接样式 */
-.VPDoc .vp-doc a {
-  @apply text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200;
-}
-
-/* 代码块样式 */
-.VPDoc .vp-doc div[class*="language-"] {
-  @apply rounded-lg overflow-hidden shadow-lg;
-}
-
-.VPDoc .vp-doc code {
-  @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-1.5 py-0.5 rounded text-sm;
-}
-
-/* 表格样式 */
-.VPDoc .vp-doc table {
-  @apply rounded-lg overflow-hidden shadow-md;
-}
-
-.VPDoc .vp-doc th,
-.VPDoc .vp-doc td {
-  @apply border border-gray-200 dark:border-gray-700 px-4 py-3;
-}
-
-.VPDoc .vp-doc th {
-  @apply bg-gray-50 dark:bg-gray-800 font-semibold;
-}
-
-/* 引用块样式 */
-.VPDoc .vp-doc blockquote {
-  @apply border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-900/20 pl-4 py-2 my-4 rounded-r-lg;
-}
-
-/* 首页特殊样式 */
-.VPHome {
-  @apply pb-0;
-}
-
-.VPHero .text {
-  @apply text-gray-900 dark:text-gray-100;
-}
-
-/* 响应式优化 */
-@media (max-width: 768px) {
-  .VPDoc .vp-doc p,
-  .VPDoc .vp-doc li {
+    font-family: 'Noto Serif SC', 'Songti SC', serif;
+    color: #2c2c2c;
     font-size: 16px;
+    line-height: 2;
   }
 }
 
-/* 自定义动画类 */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+:root {
+  --vp-c-bg: #f9f7f3;
+  --vp-c-bg-alt: #f0eee9;
+  --vp-c-text-1: #2c2c2c;
+  --vp-c-text-2: #5c5c5c;
+  --vp-c-brand-1: #c05b4d;
+  --vp-c-brand-2: #a04b3d;
+  --vp-c-border: transparent;
+  --vp-c-divider: #e0ded9;
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.dark {
+  --vp-c-bg: #1c1a18;
+  --vp-c-bg-alt: #252320;
+  --vp-c-text-1: #ebe8e4;
+  --vp-c-text-2: #9c9893;
+  --vp-c-brand-1: #d97b6c;
+  --vp-c-brand-2: #c05b4d;
+  --vp-c-border: #3c3a36;
+  --vp-c-divider: #3c3a36;
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
+/* --- 核心布局：左对齐 --- */
+
+.VPPage {
+  display: flex !important;
+  justify-content: center !important;
 }
 
-.animate-slide-up {
-  animation: slideUp 0.6s ease-out;
+.VPDoc {
+  width: 100% !important;
+  max-width: 720px !important;
+  margin: 0 auto !important;
+  padding: 60px 24px !important; /* 顶部留白增加 */
+}
+
+/* 隐藏左侧不需要的区域 */
+.VPContent .VPSidebar { display: none !important; }
+.VPContent { padding-left: 0 !important; }
+.VPDocAside { display: none !important; } 
+
+/* --- 排版重置：严格左对齐 --- */
+
+/* 1. 标题左对齐 */
+.VPDoc h1 {
+  font-size: 36px !important;
+  font-weight: normal !important;
+  text-align: left !important; /* 👈 关键：改为左对齐 */
+  margin-bottom: 2rem !important;
+  margin-top: 0 !important;
+  letter-spacing: -0.02em;
+  line-height: 1.2 !important;
+  /* ✨ 核心修改：暗红色 + 斜体 */
+  color: #8b1a1a !important; 
+  font-style: italic !important;
+  font-family: 'Georgia', 'Noto Serif SC', serif !important; /* 英文标题用 Georgia 斜体非常美 */
+}
+
+.VPDoc h2 {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  margin: 48px 0 10px !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+  /* ✨ 核心修改 */
+  color: #8b1a1a !important;
+  font-style: italic !important;
+}
+
+.VPDoc h3 {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.5rem !important;
+   /* ✨ 核心修改 */
+  color: #a63434 !important; /* 稍微浅一点点的红，做层级区分 */
+  font-style: italic !important;
+}
+
+/* 2. 列表左对齐：让圆点贴着左边线 */
+.VPDoc ul, .VPDoc ol {
+  /* 👈 关键：内缩进改为 0，让符号靠左 */
+  padding-left: 0 !important; 
+  /* 👈 关键：符号放进内容框，确保"第一个符号"在直线上 */
+  list-style-position: inside !important; 
+  margin-bottom: 2rem !important;
+}
+
+.VPDoc li {
+  margin-bottom: 0.5rem !important;
+}
+
+/* 3. 引用块左对齐：让竖线贴着左边线 */
+.VPDoc blockquote {
+  background: transparent !important;
+  border-left: 4px solid var(--vp-c-brand-1) !important;
+  /* 👈 关键：外边距为0，贴左边 */
+  margin: 2rem 0 !important; 
+  padding-left: 1rem !important; /* 内容离竖线稍微有点距离 */
+  font-style: italic;
+  color: var(--vp-c-text-2) !important;
+}
+
+/* 4. Small 标签 (日期) 左对齐 */
+small {
+  display: block;
+  text-align: left !important; /* 👈 关键：左对齐 */
+  color: var(--vp-c-text-2);
+  margin-top: -1.5rem; /* 紧贴标题下方 */
+  margin-bottom: 3rem;
+  font-family: sans-serif;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 5. 分隔线左对齐 (Now 页面那个小短线) */
+/* 如果你之前用了 mx-auto (居中)，需要去 Markdown 里把 mx-auto 删掉，改成 mr-auto 或者不写 */
+
+/* 通用段落 */
+.VPDoc p {
+  margin-bottom: 1.5rem !important;
+  text-align: left !important;
+}
+
+/* 链接去下划线 */
+.VPDoc a {
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.VPDoc a:hover {
+  color: #8b1a1a !important;
+  border-bottom-color: #8b1a1a !important;
+}
+
+/* 隐藏底部导航 */
+.doc-footer-before, .prev-next { display: none !important; }
+
+/* 导航栏背景 */
+.VPNav {
+  background-color: var(--vp-c-bg) !important;
+  border-bottom: none !important;
+  font-family: 'Noto Serif SC', 'Songti SC', serif !important;
 }
