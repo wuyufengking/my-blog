@@ -5,7 +5,7 @@ title: Real's Blog
 titleTemplate: Fuwari 风格的个人博客
 
 # Hero Section 配置 - 用于全屏Banner
-heroSubtitle: "分享技术、记录生活、持续学习"
+heroSubtitle: "Just 畅所欲言..."
 heroImage: /img/hero-banner.jpg  # 全屏背景图，请添加对应的图片文件
 
 # 个人信息配置 - 用于左侧卡片

@@ -8,6 +8,11 @@ title: 碎碎念
 
 <div class="timeline-container">
 
+<Memo date="2025/12/8">
+我是一个跑者
+</Memo>
+
+
 <Memo date="2025/12/7">
 写博客/发想法 是为了强化我认为 正确/有帮助 的事物的记忆
 </Memo>
