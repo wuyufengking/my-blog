@@ -9,6 +9,10 @@ title: 碎碎念
 <div class="timeline-container">
 
 <Memo date="2025/12/10">
+赚钱是一门技能，而我对其一无所知
+</Memo>
+
+<Memo date="2025/12/10">
 为他人创造价值，是赚钱的唯一方式
 </Memo>
 
