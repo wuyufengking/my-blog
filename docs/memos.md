@@ -8,6 +8,10 @@ title: 碎碎念
 
 <div class="timeline-container">
 
+<Memo date="2025/12/10">
+为他人创造价值，是赚钱的唯一方式
+</Memo>
+
 <Memo date="2025/12/9">
 人的一辈子就是
 去干自己想干的事情
