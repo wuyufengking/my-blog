@@ -8,6 +8,11 @@ title: 碎碎念
 
 <div class="timeline-container">
 
+<Memo date="2025/12/13">
+在使用AI进行学习/工作的时候，要注意划分界线
+一部分交给AI，一部分则完全由自己动手
+</Memo>
+
 <Memo date="2025/12/10">
 赚钱是一门技能，而我对其一无所知
 </Memo>
