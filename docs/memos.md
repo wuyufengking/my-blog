@@ -8,6 +8,10 @@ title: 碎碎念
 
 <div class="timeline-container">
 
+<Memo date="2025/12/16">
+造成人与人之间差异的最大原因是摄入的信息不同
+</Memo>
+
 <Memo date="2025/12/13">
 在使用AI进行学习/工作的时候，要注意划分界线
 一部分交给AI，一部分则完全由自己动手
