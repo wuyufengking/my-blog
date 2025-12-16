@@ -9,6 +9,12 @@ title: 碎碎念
 <div class="timeline-container">
 
 <Memo date="2025/12/16">
+学习不是目标，
+完成事情才是目标。
+学习只是为了解决“我现在不会做”的那一段。
+</Memo>
+
+<Memo date="2025/12/16">
 造成人与人之间差异的最大原因是摄入的信息不同
 </Memo>
 
