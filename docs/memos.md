@@ -8,7 +8,7 @@ title: 碎碎念
 
 <div class="timeline-container">
 
-<Memo date="2025/12/16">
+<Memo date="2025/12/17">
 写作不是为了展示理解，而是为了锻造理解。
 </Memo>
 
