@@ -8,6 +8,26 @@ title: 碎碎念
 
 <div class="timeline-container">
 
+<!-- NEW_MEMO_HERE -->
+
+  <Memo date="2025/12/18">
+    行1
+行2
+行3
+  </Memo>
+
+<Memo date="2025/12/18">
+  这是第一行，
+</Memo>
+
+<Memo date="2025/12/18">
+  你好2？
+</Memo>
+
+  <Memo date="2025/12/18">
+    你好啊？
+  </Memo>
+
 <Memo date="2025/12/17">
 写作不是为了展示理解，而是为了锻造理解。
 </Memo>
