@@ -11,6 +11,11 @@ title: 碎碎念
 <!-- NEW_MEMO_HERE -->
   <Memo date="2025/12/18">
     test1
+    
+    test2
+  </Memo>
+  <Memo date="2025/12/18">
+    test1
     test2
   </Memo>
 
