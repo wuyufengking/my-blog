@@ -9,6 +9,18 @@ title: 碎碎念
 <div class="timeline-container">
 
 <!-- NEW_MEMO_HERE -->
+  <Memo date="2025/12/27">
+    追逐目标，但是目标是否实现并不重要，重要的是享受这个过程
+  </Memo>
+  <Memo date="2025/12/24">
+    灵感是有保质期的，TodoList是灵感的“停尸房”
+  </Memo>
+  <Memo date="2025/12/24">
+    迷茫时读书，焦虑时运动，独处时蓄力
+  </Memo>
+  <Memo date="2025/12/22">
+    天赋不是我能够快速的做什么，而是我忍不住要做什么
+  </Memo>
 
 <Memo date="2025/12/17">
 写作不是为了展示理解，而是为了锻造理解。
