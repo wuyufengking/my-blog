@@ -91,18 +91,20 @@ html.dark .memo-card__meta {
   font-family: 'Noto Serif SC', 'Georgia', serif;
   color: var(--vp-c-text-1);
   font-size: 1rem;
+  white-space: pre-line; /* 保留换行符，合并连续空格 */
   /* 防止内容撑破卡片 */
   min-width: 0;
   overflow: hidden;
 }
 
-/* ===== 关键：代码块横向滚动，不撑破卡片 ===== */
+/* ===== 关键：代码块重置 white-space，不受 pre-line 影响 ===== */
 .memo-card__body :deep(pre),
 .memo-card__body :deep(div[class*='language-']) {
   overflow-x: auto;
   max-width: 100%;
   border-radius: 8px;
   margin: 1rem 0;
+  white-space: pre; /* 代码块保持原始 pre 行为 */
 }
 
 .memo-card__body :deep(div[class*='language-']) > pre {
