@@ -8,13 +8,6 @@ export default defineConfig({
   markdown: {
     breaks: true,  // 将单次换行渲染为 <br>，编辑器所见即页面所得
   },
-  vue: {
-    template: {
-      compilerOptions: {
-        whitespace: 'preserve',  // 保留模板中的换行符，不被 Vue 编译器合并为空格
-      },
-    },
-  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

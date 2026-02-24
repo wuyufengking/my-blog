@@ -91,7 +91,6 @@ html.dark .memo-card__meta {
   font-family: 'Noto Serif SC', 'Georgia', serif;
   color: var(--vp-c-text-1);
   font-size: 1rem;
-  white-space: pre-line; /* 保留换行符，合并连续空格 */
   /* 防止内容撑破卡片 */
   min-width: 0;
   overflow: hidden;
