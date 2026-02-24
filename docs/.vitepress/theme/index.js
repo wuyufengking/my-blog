@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import Layout from './Layout.vue'
 import Home from './components/Home.vue'
 import Memo from './components/Memo.vue' // 1. 引入
+import MemoCard from './components/MemoCard.vue' // 引入新卡片组件
 
 // 引入样式文件 - 必须包含Tailwind CSS
 import './style.css'
@@ -22,6 +23,7 @@ export default {
     // 全局注册组件
     app.component('Home', Home)
     app.component('Memo', Memo) // 2. 注册
+    app.component('MemoCard', MemoCard) // 注册新卡片组件
 
     // 可以在这里添加全局属性或插件
     if (typeof window !== 'undefined') {

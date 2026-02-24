@@ -8,8 +8,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/' },
-      { text: '碎碎念', link: '/memos' },
+      { text: 'Log', link: '/' },
+      { text: '文章', link: '/articles' },
       { text: '当下', link: '/now' },
       { text: '关于我', link: '/about' }
     ],
