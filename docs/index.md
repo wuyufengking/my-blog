@@ -12,6 +12,13 @@ title: Log
 <div class="timeline-container">
 
 <!-- NEW_MEMO_HERE -->
+<MemoCard date="2026/02/25" :tags="['编程']">
+
+今天玩了一下nanoclaw, 配置了一天...(由于wsl和科学上网的事情)
+GLM5一下午都没能够解决问题(not even close...)，还是opus4.6搞定的。
+明天要好好思考一下agent有什么用(感觉还没太大用...), 以及阅读一下nanoclaw的代码，也许可以尝试改成rust版本的。
+</MemoCard>
+
 <MemoCard date="2026/02/24" :tags="['编程']">
 
 最近多多vibe coding了一下，发觉我还是难以信任AI做多步的任务。
