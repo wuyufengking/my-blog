@@ -12,6 +12,13 @@ title: Log
 <div class="timeline-container">
 
 <!-- NEW_MEMO_HERE -->
+<MemoCard date="2026/03/02" :tags="['生活']">
+
+看了数字极简这本书之后，决定将telegram、folo上订阅的推文，还有QQ、微信群聊里面的内容，全部堆到星期六早上看，一周只看一次。
+另外的，把学习的背景音乐也停了，只是带着耳机开启降噪功能。
+最近几天脑袋有点奇怪的感觉，可能是戒断反应了hhh
+</MemoCard>
+
 <MemoCard date="2026/03/01" :tags="['生活']">
 
 人们对于财富的定义不同。
