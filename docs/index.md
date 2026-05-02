@@ -11,6 +11,14 @@ title: Log
 
 <div class="timeline-container">
 
+<MemoCard date="2026/05/02" :tags="['生活']">
+
+浪费了好多好多的时间。
+我应该将时间都花在真正有趣的事情上。
+但是，毅力也靠不住，什么梦想也靠不住。emmm。
+明天尝试用正确的事情的有趣的一面，填满一整天。
+</MemoCard>
+
 <!-- NEW_MEMO_HERE -->
 <MemoCard date="2026/05/01" :tags="['爱情']">
 
