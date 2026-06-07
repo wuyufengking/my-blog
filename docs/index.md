@@ -11,7 +11,7 @@ title: Log
 
 <div class="timeline-container">
 
-<MemoCard date="2026/06/05" :tags="['生活']">
+<MemoCard date="2026/06/07" :tags="['生活']">
 
 没人在意你的思考，只关心你“看起来多厉害“。
 无论是精致的照片，在哪里旅游，多有钱，还是获得了什么奖。
